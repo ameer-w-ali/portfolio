@@ -1,13 +1,13 @@
-/*==================== GOOGLE FONTS ====================*/
+/* GOOGLE FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-/*==================== VARIABLES CSS ====================*/
+/* VARIABLES CSS */
 :root {
   --header-height: 3rem;
 
-  /*========== Colors ==========*/
+  /* Colors */
   /* Change favorite color */
-  --hue-color: 265;
+  --hue-color: 215;
   /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
   /* HSL color mode */
@@ -24,7 +24,7 @@
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
-  /*========== Font and typography ==========*/
+  /* Font and typography */
   --body-font: 'Poppins', sans-serif;
 
   /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
@@ -36,11 +36,11 @@
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
 
-  /*========== Font weight ==========*/
+  /* Font weight */
   --font-medium: 500;
   --font-semi-bold: 600;
 
-  /*========== Margins Bottom ==========*/
+  /* Margins Bottom */
   /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
   --mb-0-25: .25rem;
   --mb-0-5: .5rem;
@@ -51,7 +51,7 @@
   --mb-2-5: 2.5rem;
   --mb-3: 3rem;
 
-  /*========== z index ==========*/
+  /* z index */
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
@@ -70,7 +70,7 @@
   }
 }
 
-/*========== Variables Dark theme ==========*/
+/* Variables Dark theme */
 body.dark-theme {
   /* HSL color mode */
   --first-color-second: hsl(var(--hue-color), 30%, 8%);
@@ -83,7 +83,7 @@ body.dark-theme {
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 }
 
-/*========== Button Dark/Light ==========*/
+/* Button Dark/Light */
 .nav__btns {
   display: flex;
   align-items: center;
@@ -100,7 +100,7 @@ body.dark-theme {
   color: var(--first-color);
 }
 
-/*==================== BASE ====================*/
+/* BASE */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -142,7 +142,7 @@ img {
   height: auto;
 }
 
-/*==================== REUSABLE CSS CLASSES ====================*/
+/* REUSABLE CSS CLASSES */
 .section {
   padding: 2rem 0 4rem;
 }
@@ -163,9 +163,9 @@ img {
   text-align: center;
 }
 
-/*==================== LAYOUT ====================*/
+/* LAYOUT */
 .container {
-  max-width: 768px;
+  max-width: 912px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
@@ -184,7 +184,7 @@ img {
   background-color: var(--body-color);
 }
 
-/*==================== NAV ====================*/
+/* NAV */
 .nav {
   max-width: 968px;
   height: var(--header-height);
@@ -273,7 +273,7 @@ img {
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }
 
-/*==================== HOME ====================*/
+/* HOME */
 .home__container {
   gap: 1rem;
 }
@@ -329,6 +329,7 @@ img {
 
 .home__scroll {
   display: none;
+  margin:0 auto;
 }
 
 .home__scroll-button {
@@ -355,7 +356,7 @@ img {
   font-size: 1.25rem;
 }
 
-/*==================== BUTTONS ====================*/
+/* BUTTONS */
 .button {
   display: inline-block;
   background-color: var(--first-color);
@@ -405,7 +406,7 @@ img {
   background-color: #fff;
 }
 
-/*==================== ABOUT ====================*/
+/* ABOUT */
 .about__img {
   width: 200px;
   border-radius: .5rem;
@@ -445,7 +446,7 @@ img {
   justify-content: center;
 }
 
-/*==================== SKILLS ====================*/
+/* SKILLS */
 .skills__container {
   row-gap: 0;
 }
@@ -512,47 +513,61 @@ img {
 }
 
 .skills_html {
-  width: 90%;
+  width: 95%;
 }
-
 .skills_css {
-  width: 80%;
+  width: 88%;
 }
-
 .skills_js {
-  width: 60%;
+  width: 79%;
 }
-
+.skills_ts {
+  width: 70%;
+}
 .skills_angular {
   width: 85%;
 }
-
-.skills_php {
+.skills_react {
   width: 80%;
 }
-
+.skills_next {
+  width: 65%;
+}
+.skills_php {
+  width: 55%;
+}
 .skills_node {
   width: 70%;
 }
-
-.skills_firebase {
+.skills_express {
   width: 90%;
 }
-
-.skills_python {
-  width: 55%;
+.skills_hono {
+  width: 30%;
 }
-
-.skills_figma {
-  width: 90%;
+.skills_mysql {
+  width: 40%;
 }
-
-.skills_sketch {
-  width: 85%;
-}
-
-.skills_photoshop {
+.skills_postgres {
   width: 75%;
+}
+.skills_mongodb {
+  width: 90%;
+}
+.skills_prisma {
+  width: 70%;
+}
+.skills_mongoose {
+  width: 80%;
+}
+.skills_docker{
+  width:45%;
+}
+.skills_git{
+  width:85%;
+}
+.skills_aws{
+  width:45%;
 }
 
 .skills__close .skills__list {
@@ -569,7 +584,7 @@ img {
   transform: rotate(-180deg);
 }
 
-/*==================== QUALIFICATION ====================*/
+/* QUALIFICATION */
 .qualification__tabs {
   display: flex;
   justify-content: space-evenly;
@@ -641,7 +656,7 @@ img {
   color: var(--first-color);
 }
 
-/*==================== SERVICES ====================*/
+/* SERVICES */
 .services__container {
   gap: 1.5rem;
   grid-template-columns: repeat(2, 1fr);
@@ -739,7 +754,7 @@ img {
   visibility: visible;
 }
 
-/*==================== PORTFOLIO ====================*/
+/* PORTFOLIO */
 .portfolio__container {
   overflow: initial;
 }
@@ -799,7 +814,7 @@ img {
   outline: none;
 }
 
-/*==================== PROJECT IN MIND ====================*/
+/* PROJECT IN MIND */
 .project {
   text-align: center;
 }
@@ -828,7 +843,7 @@ img {
   justify-self: center;
 }
 
-/*==================== TESTIMONIAL ====================*/
+/* TESTIMONIAL */
 .testimonial__data,
 .testimonial__header {
   display: flex;
@@ -868,7 +883,7 @@ img {
   bottom: 0;
 }
 
-/*==================== CONTACT ME ====================*/
+/* CONTACT ME */
 .contact__container {
   row-gap: 3rem;
 }
@@ -915,8 +930,11 @@ img {
   outline: none;
   padding: .25rem .5rem .5rem 0;
 }
+textarea.contact__input{
+  resize:none;
+}
 
-/*==================== FOOTER ====================*/
+/* FOOTER */
 .footer {
   padding-top: 2rem;
 }
@@ -972,7 +990,7 @@ img {
   color: #fff;
 }
 
-/*========== SCROLL UP ==========*/
+/* SCROLL UP */
 .scrollup {
   position: fixed;
   right: 1rem;
@@ -999,7 +1017,7 @@ img {
   bottom: 5rem;
 }
 
-/*========== SCROLL BAR ==========*/
+/* SCROLL BAR */
 ::-webkit-scrollbar {
   width: .60rem;
   background-color: var(--scroll-bar-color);
@@ -1015,7 +1033,7 @@ img {
   background-color: var(--text-color-light);
 }
 
-/*==================== MEDIA QUERIES ====================*/
+/* MEDIA QUERIES */
 /* For small devices */
 @media screen and (max-width:350px) {
   .container {
