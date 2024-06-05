@@ -96,6 +96,6 @@ portfolio-website/
 
 ## Contact
 
-Feel free to reach out to me via [ameerwajidlai@gmail.com](mailto:ameerwajidali@gmail.com) if you have any questions or suggestions.
+Feel free to reach out to me via [Ameer Wajid Ali](mailto:ameerwajidali@gmail.com) if you have any questions or suggestions.
 
 Thank you for visiting my portfolio website!
